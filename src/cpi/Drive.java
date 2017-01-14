@@ -41,8 +41,8 @@ public class Drive {
 	}
 	
 	private void arcadeDrive(){
-		rightMotor = (-Robot.pilot.leftStickYaxis() * MAX_SPEED) - (Robot.pilot.rightStickXaxis() * MAX_SPEED);
-		leftMotor = (-Robot.pilot.leftStickYaxis() * MAX_SPEED) + (Robot.pilot.rightStickXaxis() * MAX_SPEED);
+		rightMotor = (-Robot.pilot.leftStickYaxis() * MAX_SPEED) - (Robot.pilot.leftStickXaxis() * MAX_SPEED);
+		leftMotor = (-Robot.pilot.leftStickYaxis() * MAX_SPEED) + (Robot.pilot.leftStickXaxis() * MAX_SPEED);
 		leftMotor = -leftMotor;
 		System.out.println("( " + -Robot.pilot.leftStickYaxis() + " , " + Robot.pilot.rightStickXaxis() + " )");
 //		System.out.print("( " + rightMotor);
